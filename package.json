@@ -1,0 +1,12 @@
+{
+  "name": "ai-bootcamp",
+  "version": "1.0.0",
+  "description": "A kids app to show food in different fields like chemistry.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}

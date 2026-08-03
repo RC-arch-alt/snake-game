@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    touch-action: pan-y;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+}
+
+#difficulty {
+    padding: 4px 8px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #555;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+}
+
+#gameWrapper {
+    position: relative;
+}
+
+#gameArea {
+    width: 400px;
+    height: 400px;
+    border: 2px solid #fff;
+    background-color: #222;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+}
+
+#gameArea:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+#playOverlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 1.2rem;
+    z-index: 10;
+    pointer-events: none;
+    text-align: center;
+    padding: 16px;
+}
+
+/* Mobile directional buttons */
+#mobileControls {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin-top: 10px;
+}
+
+#mobileControls div {
+    display: flex;
+    gap: 4px;
+}
+
+#mobileControls button {
+    width: 56px;
+    height: 56px;
+    font-size: 1.5rem;
+    border: 2px solid #555;
+    border-radius: 8px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#mobileControls button:active {
+    background: #555;
+    border-color: #4caf50;
+}
+
+@media (hover: none) and (max-width: 768px) {
+    #mobileControls {
+        display: flex;
+    }
+}
+
+@media (max-width: 450px) {
+    #gameArea {
+        width: 90vw;
+        height: 90vw;
+    }
+    #mobileControls {
+        display: flex;
+    }
+    #playOverlay {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #mobileControls button {
+        width: 48px;
+        height: 48px;
+        font-size: 1.2rem;
+    }
+}
