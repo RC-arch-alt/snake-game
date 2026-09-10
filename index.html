@@ -1,35 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamma AI &mdash; Make Presentations Faster | Project SP</title>
+  <meta name="description" content="Make presentations faster with Gamma AI. Start with 400 credits and get 200 bonus credits through this referral link.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Snake Game</h1>
-        <div id="controls">
-            <label for="difficulty">Difficulty:</label>
-            <select id="difficulty">
-                <option value="easy">Easy</option>
-                <option value="medium">Medium</option>
-                <option value="hard">Hard</option>
-            </select>
-        </div>
-        <div id="gameWrapper">
-            <div id="gameArea" tabindex="0"></div>
-            <div id="playOverlay">Press any arrow key to start</div>
-        </div>
-        <div id="mobileControls">
-            <button data-dir="up">&#9650;</button>
-            <div>
-                <button data-dir="left">&#9664;</button>
-                <button data-dir="down">&#9660;</button>
-                <button data-dir="right">&#9654;</button>
-            </div>
-        </div>
+
+  <!-- Decorative background -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
+    <div class="bg-blob bg-blob-3"></div>
+    <div class="bg-grid"></div>
+  </div>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="#top">
+        <span class="logo-mark" aria-hidden="true">&#10022;</span>
+        <span>Project&nbsp;SP</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#why">Why Gamma</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small btn-primary" href="https://gamma.app/signup?r=s0ycbuvoccfiztn" target="_blank" rel="noopener">Join Gamma</a>
+      </nav>
     </div>
-    <script src="script.js"></script>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container">
+        <span class="badge">&#10022; 200 bonus credits on signup</span>
+        <h1 class="hero-title">
+          Want to make <span class="grad-text">presentations</span> faster?
+        </h1>
+        <p class="hero-sub">
+          Use Gamma AI to create presentations faster and start with <strong>400 credits</strong>.
+        </p>
+        <p class="hero-punch">
+          But wish you had <span class="accent-text">more credits</span>?
+        </p>
+        <p class="hero-cta-line">
+          Click the button to get <strong class="accent-text">200 bonus credits</strong> &mdash; free, just for starting with Gamma.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="https://gamma.app/signup?r=s0ycbuvoccfiztn" target="_blank" rel="noopener">
+            Join Gamma &amp; Get Started <span aria-hidden="true">&rarr;</span>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
+        </div>
+        <p class="hero-note">&#127873; Referral bonus: +200 credits &middot; No extra cost to you</p>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="section" id="how">
+      <div class="container">
+        <h2 class="section-title">How it works</h2>
+        <p class="section-sub">Get your bonus credits in three simple steps.</p>
+        <div class="cards">
+          <article class="card">
+            <div class="card-num">1</div>
+            <h3>Click the button</h3>
+            <p>Tap <strong>Join Gamma</strong> below to open the signup page via this referral link.</p>
+          </article>
+          <article class="card">
+            <div class="card-num">2</div>
+            <h3>Create your account</h3>
+            <p>Sign up in under a minute &mdash; no credit card required to get started.</p>
+          </article>
+          <article class="card">
+            <div class="card-num">3</div>
+            <h3>Get 200 bonus credits</h3>
+            <p>Your 400 starter credits plus <strong>200 bonus credits</strong> are ready to use on your first deck.</p>
+          </article>
+        </div>
+        <div class="center">
+          <a class="btn btn-primary btn-lg" href="https://gamma.app/signup?r=s0ycbuvoccfiztn" target="_blank" rel="noopener">
+            Join Gamma &amp; Get 200 Bonus Credits <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY GAMMA ===== -->
+    <section class="section section-alt" id="why">
+      <div class="container">
+        <h2 class="section-title">Why Gamma</h2>
+        <p class="section-sub">Presentations, docs and websites &mdash; created with AI in seconds, not hours.</p>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">&#9889;</div>
+            <h3>Super fast</h3>
+            <p>Turn a simple prompt into a polished, on-brand deck in minutes instead of an afternoon.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">&#127912;</div>
+            <h3>Beautiful by default</h3>
+            <p>Gamma's layouts, themes and visuals look premium out of the box &mdash; no design skills needed.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">&#128295;&#65039;</div>
+            <h3>Built for creators</h3>
+            <p>Edit with simple text, remix templates, export to PowerPoint or PDF, and share with anyone.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section" id="faq">
+      <div class="container container-narrow">
+        <h2 class="section-title">FAQ</h2>
+        <p class="section-sub">Quick answers before you jump in.</p>
+        <div class="faq">
+          <details class="faq-item">
+            <summary>How do I get the 200 bonus credits?</summary>
+            <p>Sign up through the referral link on this page. Your account starts with 400 credits and the 200 bonus credits are applied through the referral &mdash; no code needed.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is Gamma really free to start?</summary>
+            <p>Yes. You can create an account and start building with your starter credits without paying anything. Upgrading later is optional.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do I need design or tech skills?</summary>
+            <p>No. Gamma handles the design. You describe your idea and Gamma builds a presentation you can fine-tune with simple edits.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I export my presentations?</summary>
+            <p>Absolutely &mdash; export to PowerPoint, PDF, or share a link. Your work is yours.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section class="section cta">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Ready to present faster?</h2>
+          <p>Start with 400 credits, add 200 bonus credits, and make your first AI presentation today.</p>
+          <a class="btn btn-primary btn-lg" href="https://gamma.app/signup?r=s0ycbuvoccfiztn" target="_blank" rel="noopener">
+            Join Gamma &amp; Get Started <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-mark" aria-hidden="true">&#10022;</span> Project SP
+      </div>
+      <p class="footer-disclosure">
+        Project SP is an independent referral page and is not affiliated with Gamma.
+      </p>
+      <a href="https://launchkiwi.com/p/project-sp" target="_blank" rel="noopener">
+        <img src="https://launchkiwi.com/badge-light.svg" alt="Featured on LaunchKiwi" width="198" height="62" />
+      </a>
+    </div>
+  </footer>
+
 </body>
 </html>
